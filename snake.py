@@ -16,7 +16,7 @@ applecolor = (227, 61, 45)
 font = pygame.font.Font('freesansbold.ttf', 32)
 
 grid = []
-gridDim = gridwidth, gridheight = (51, 51)
+gridDim = gridwidth, gridheight = (21, 21)
 
 
 numberofgrides = (gridheight * gridwidth)
@@ -189,9 +189,9 @@ while not done:
 
     playerpos = [playerpos[0] + roc[0], playerpos[1] + roc[1]]
 
-    blitztext(10 * z, 10 * z, str(int( clock.get_fps() * 1000 )/1000))
+    blitztext(40, 40, str(int( clock.get_fps() * 1000 )/1000))
     pygame.display.update()
-    clock.tick(15)
+    clock.tick(10)
     
 debugtext.close()
 pygame.quit()
